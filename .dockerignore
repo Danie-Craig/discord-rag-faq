@@ -1,0 +1,47 @@
+# Exclude these from the Docker build context to keep image small and builds fast.
+
+# Python virtualenv (huge, machine-specific)
+.venv/
+venv/
+env/
+
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.cache/
+
+# Secrets — never bake into image
+.env
+.env.*
+!.env.example
+
+# Local ML model caches (image rebuilds the model layer cleanly)
+.huggingface/
+~/.cache/
+
+# Git
+.git/
+.gitignore
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Eval artifacts (not needed in the runtime image)
+eval_report.json
+feedback.jsonl
+*.log
+
+# Docker doesn't need its own files in context
+Dockerfile
+.dockerignore
+
+# Documentation isn't needed in the runtime image
+README.md
+docs/

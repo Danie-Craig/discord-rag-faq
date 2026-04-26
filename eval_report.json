@@ -1,0 +1,221 @@
+{
+  "summary": {
+    "n_examples": 10,
+    "avg_retrieval_precision": 0.6,
+    "avg_faithfulness_1_to_5": 4.9,
+    "avg_correctness_1_to_5": 4.5,
+    "avg_latency_ms": 11561.0
+  },
+  "results": [
+    {
+      "id": "office_hours_time",
+      "question": "When are office hours scheduled?",
+      "expected_answer": "Office hours are on Sundays from 10:00 AM to 11:00 AM EST.",
+      "actual_answer": "You can find the exact dates and times of Office Hours in the Discord announcements. However, based on the provided documentation, here are some upcoming Office Hours sessions:\n\n- Week 7: Sunday, 10/26, 10:00 AM\u201411:00 AM (EST)\n- Week 7: Sunday, 11/2, 10:00 AM\u201411:00 AM (EST)\n- Week 8: Sunday, 11/9, 10:00 AM\u201411:00 AM (EST)\n- Week 10: Sunday, 11/16, 10:00 AM\u201411:00 AM (EST)\n- Week 10: Sunday, 11/23, 10:00 AM\u201411:00 AM (EST)\n- Week 11: Tuesday, 11/25, 8:30 PM\u201410:30 PM (EST)\n\nPlease check the Discord announcements for the most up-to-date information. [intern_faq.md]",
+      "expected_sources": [
+        "intern_faq.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "intern_faq.md",
+        "project_assignment.md",
+        "intern_faq.md"
+      ],
+      "precision": 0.33,
+      "faithfulness": 5,
+      "correctness": 4,
+      "latency_ms": 620
+    },
+    {
+      "id": "rag_definition",
+      "question": "What is RAG?",
+      "expected_answer": "RAG stands for Retrieval-Augmented Generation. It is a technique where relevant documents are retrieved from a knowledge base and provided as context to an LLM to generate grounded answers.",
+      "actual_answer": "A Retrieval-Augmented Generation (RAG) bot is a type of AI that goes beyond what a standard Large Language Model (LLM) might know by \"retrieving\" relevant information before \"generating\" a response. This allows the bot to answer questions more accurately, especially when dealing with complex or up-to-date information. [project_assignment.md]",
+      "expected_sources": [
+        "training.md",
+        "intern_faq.md",
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "training.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md"
+      ],
+      "precision": 1.0,
+      "faithfulness": 5,
+      "correctness": 4,
+      "latency_ms": 353
+    },
+    {
+      "id": "submission_deadline",
+      "question": "When is the weeks 1-3 assignment due?",
+      "expected_answer": "The weeks 1-3 assignment is due at 11pm EST on Sunday April 26th.",
+      "actual_answer": "I don't have that information in the bootcamp documentation \u2014 please ask in the appropriate Discord channel or check Office Hours.",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "intern_faq.md",
+        "intern_faq.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "bootcamp_journey.md"
+      ],
+      "precision": 0.5,
+      "faithfulness": 5,
+      "correctness": 5,
+      "latency_ms": 18402
+    },
+    {
+      "id": "backend_role",
+      "question": "What does a Backend Engineer do in this project?",
+      "expected_answer": "The Backend Engineer builds APIs, handles deployment with Docker, sets up logging and observability, and defines API contracts. If there is no Frontend partner, they also implement the Discord bot logic.",
+      "actual_answer": "As a Backend Engineer, your responsibilities include building robust APIs, handling scalability, deployment, and ensuring the application's reliability through logging and observability. Your focus will be on system architecture, API design, and operational excellence. [project_assignment.md]",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "intern_faq.md",
+        "bootcamp_journey.md",
+        "project_assignment.md",
+        "intern_faq.md",
+        "project_assignment.md"
+      ],
+      "precision": 0.5,
+      "faithfulness": 5,
+      "correctness": 4,
+      "latency_ms": 16432
+    },
+    {
+      "id": "data_scientist_role",
+      "question": "What are the responsibilities of a Data Scientist on this project?",
+      "expected_answer": "The Data Scientist builds the RAG pipeline including chunking, embeddings, vector search, retrieval logic, prompt construction, and the LLM call. They choose models and vector stores.",
+      "actual_answer": "As a Data Scientist, you are at the core of the RAG bot's \"intelligence.\" Your responsibilities include defining how the bot understands questions, retrieves information, and how the LLM ultimately uses that information to generate answers. Your focus will be on the **agent's logic and the data pipeline**.",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "project_assignment.md",
+        "intern_faq.md",
+        "intern_faq.md",
+        "project_assignment.md",
+        "bootcamp_journey.md"
+      ],
+      "precision": 0.5,
+      "faithfulness": 5,
+      "correctness": 4,
+      "latency_ms": 10424
+    },
+    {
+      "id": "submission_parts",
+      "question": "What do I need to submit for the weeks 1-3 project?",
+      "expected_answer": "The submission has three parts: a design document, a GitHub repository shared with community@pmaccelerator.io, and a 2-4 minute video walkthrough.",
+      "actual_answer": "I don't have that information in the bootcamp documentation \u2014 please ask in the appropriate Discord channel or check Office Hours.",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "intern_faq.md",
+        "intern_faq.md",
+        "bootcamp_journey.md",
+        "intern_faq.md",
+        "intern_faq.md",
+        "intern_faq.md"
+      ],
+      "precision": 0.0,
+      "faithfulness": 5,
+      "correctness": 5,
+      "latency_ms": 14453
+    },
+    {
+      "id": "api_key_security",
+      "question": "How should API keys be handled in the project?",
+      "expected_answer": "API keys must be stored in environment files (.env) and must never be hard-coded or pushed to GitHub. The .env file must be added to .gitignore.",
+      "actual_answer": "I don't have that information in the bootcamp documentation \u2014 please ask in the appropriate Discord channel or check Office Hours.",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "intern_faq.md",
+        "intern_faq.md",
+        "project_assignment.md"
+      ],
+      "precision": 0.67,
+      "faithfulness": 5,
+      "correctness": 5,
+      "latency_ms": 13535
+    },
+    {
+      "id": "recommended_llm",
+      "question": "What LLM does the assignment recommend?",
+      "expected_answer": "The assignment recommends DeepSeek R1 via Microsoft Azure AI Foundry, which is free for new Azure customers with $200 in credit.",
+      "actual_answer": "I don't have that information in the bootcamp documentation \u2014 please ask in the appropriate Discord channel or check Office Hours.",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "project_assignment.md",
+        "bootcamp_journey.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "intern_faq.md"
+      ],
+      "precision": 0.67,
+      "faithfulness": 5,
+      "correctness": 5,
+      "latency_ms": 11454
+    },
+    {
+      "id": "vector_store_options",
+      "question": "What vector store options are recommended?",
+      "expected_answer": "MongoDB Atlas Vector Search is recommended. Alternatives include Faiss, Pinecone, Weaviate, Milvus, or in-memory NumPy for prototyping.",
+      "actual_answer": "According to the documentation [project_assignment.md], the following vector store options are mentioned:\n\n1. A simple in-memory list for initial prototyping\n2. A local vector store like FAISS\n3. Integrating with MongoDB Atlas Vector Search\n4. Pinecone\n5. Weaviate\n6. Milvus\n\nThese options are listed as examples of vector stores that can be used for storing and searching vector embeddings.",
+      "expected_sources": [
+        "project_assignment.md"
+      ],
+      "retrieved_sources": [
+        "project_assignment.md",
+        "bootcamp_journey.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md",
+        "project_assignment.md"
+      ],
+      "precision": 0.83,
+      "faithfulness": 4,
+      "correctness": 4,
+      "latency_ms": 12536
+    },
+    {
+      "id": "out_of_scope",
+      "question": "What is the most famous observatory in Los Angeles?",
+      "expected_answer": "REFUSAL_EXPECTED",
+      "actual_answer": "I don't have that information in the bootcamp documentation \u2014 please ask in the appropriate Discord channel or check Office Hours.",
+      "expected_sources": [],
+      "retrieved_sources": [
+        "intern_faq.md",
+        "project_assignment.md",
+        "intern_faq.md",
+        "intern_faq.md",
+        "intern_faq.md",
+        "bootcamp_journey.md"
+      ],
+      "precision": 1.0,
+      "faithfulness": 5,
+      "correctness": 5,
+      "latency_ms": 17402
+    }
+  ]
+}
